@@ -1,0 +1,43 @@
+{
+    "name": "igorgawrys/socialler",
+    "description": "This portals for students",
+    "authors": [
+        {
+            "name": "Igor Gawryś",
+            "email": "programista.igorgawrys@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+	    "php": "^7.1.3",
+		"laravel/framework": ">=5.6 =<5.8"
+        "barryvdh/laravel-cors": "^0.11.0",
+        "barryvdh/laravel-dompdf": "^0.8.2",
+        "fideloper/proxy": "^4.0",
+        "laravel/cashier": "^7.2",
+        "laravel/framework": "5.6.*",
+        "laravel/tinker": "^1.0",
+        "laravolt/avatar": "^2.0",
+        "nahid/linkify": "^1.0",
+        "predis/predis": "^1.1",
+        "prettus/l5-repository": "^2.6",
+        "pusher/pusher-php-server": "^3.2",
+        "sagalbot/encryptable": "^1.0",
+        "tymon/jwt-auth": "1.0.0-rc.2"
+	},
+	"config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Igorgawrys\\Socialler\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Igorgawrys\\Socialler\\SociallerServiceProvider"
+            ]
+        }
+    }
+}
